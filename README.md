@@ -3,11 +3,13 @@
 
 **Paper: Interactive fracture segmentation based on optimum connectivity between superpixels**
 
-*Authors: Ademir Marques Junior, Graciela Racolte, Eniuce Menezes de Souza, Leonardo Bacchi, Alexandre Falcao, Caroline Lessio Cazarin, Luiz Gonzaga Jr, Mauricio Roberto Veronez
+*Authors: Ademir Marques Junior, Alexandre Falcao, Graciela Racolte, Eniuce Menezes de Souza, Leonardo Bacchi, Caroline Lessio Cazarin, Luiz Gonzaga Jr, Mauricio Roberto Veronez
 
-Abstract: Oil and gas reservoirs are well studied in petroleum engineering using seismic data to estimate fluid flow and well placement. However, seismic data cannot capture fractures due to their scale, and fractures may affect rock porosity and permeability. Consequently, rock fracture segmentation and quantification from aerial images of analogous outcrops can input essential information into those studies. This paper addresses the fracture segmentation problem through the Image Foresting Transform (IFT) -- a tool for the design of image operators based on optimum connectivity. First, the image is segmented into superpixels. By defining a superpixel graph and user-selected seed superpixels, fractures can be delineated by one of two proposed IFT algorithms. This strategy considerably increases computational efficiency while reducing human effort in fracture segmentation compared to manual annotation in a pixel-by-pixel fashion. We evaluate our algorithms with multiple specialists using the same set of 20 images to account for bias among human interpretations and to generate a dataset with consolidated annotation for future work. The interpretation (segmentation) time among users fluctuated between 80 and 200 minutes for the entire set, and the average F1 score ranged between 0.86 and 0.93, showing significant variation among users while demonstrating a valid showcase of the proposed algorithms.
+Abstract: Oil and gas reservoirs are well studied in petroleum engineering, using seismic data to estimate fluid flow and well placement. However, seismic data cannot capture fractures due to their scale, and fractures may affect rock porosity and permeability. Consequently, rock fracture segmentation and quantification from aerial images of analogous outcrops can input essential information into those studies. This paper presents a new method, named interactive Forest Growing (iFG), for fracture segmentation. The image is initially segmented into superpixels, defining a superpixel graph. The user selects seed superpixels, a path-cost threshold, and fractures are delineated by growing one optimum-path tree from each seed with path costs limited to the selected threshold. iFG considerably increases efficiency while reducing human effort in fracture segmentation compared to pixel-by-pixel manual annotation. We evaluate iFG with three specialists and against an interactive Region Growing (iRG) method using 15 images to measure bias in user interpretations, verify efficiency gain over a similar approach, and generate a dataset with consolidated annotation for future work. The experiments show that iFG reduces user interventions from 19% to 33% compared to iRG, users with more experience in fracture analysis complete segmentation 4-5 times faster, and segmentation effectiveness is independent of user experience since the average F1 scores between users uing both methods ranged from 0.966 to 0.979, allowing us to create a consolidated segmentation.
 
-Work sent to the SIBIGRAPI 2022 - 35th Conference on Graphics, Patterns and Images
+Work spresented in the SIBIGRAPI 2022 - 35th Conference on Graphics, Patterns and Images
+
+A. Marques Junior et al., "Interactive Fracture Segmentation Based on Optimum Connectivity Between Superpixels," in IEEE Geoscience and Remote Sensing Letters, vol. 19, pp. 1-5, 2022, Art no. 3008105, doi: 10.1109/LGRS.2022.3200311.
 
 
 # Table of Contents
@@ -64,6 +66,14 @@ This work is credited to the [Vizlab | X-Reality and GeoInformatics Lab](http://
 If you find our work useful in your research please consider citing one of our papers:
 
 ```bash
-To be published
+@ARTICLE{9862998,
+  author={Marques Junior, Ademir and Falcão, Alexandre Xavier and Racolte, Graciela and Menezes, Eniuce and Bachi, Leonardo and Cazarin, Caroline Lessio and Gonzaga, Luiz and Veronez, Mauricio Roberto},
+  journal={IEEE Geoscience and Remote Sensing Letters}, 
+  title={Interactive Fracture Segmentation Based on Optimum Connectivity Between Superpixels}, 
+  year={2022},
+  volume={19},
+  number={},
+  pages={1-5},
+  doi={10.1109/LGRS.2022.3200311}}
 ```
 
